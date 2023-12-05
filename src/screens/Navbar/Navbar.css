@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--page-padding);
+    background-color: var(--dark-shades);
+    color: var(--light-shades);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar-links-container{
+    display: flex;
+    gap: 1rem;
+    animation: rotateMenu 0.5s ease-in-out;
+    
+}
+.navbar-links-container a {
+    color: var(--light-shades);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links-container a:hover {
+    color: gray;
+    transform: translateY(-5px);
+}
+.navbar-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.navbar-name{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-190deg);
+    }
+    70% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        transform: rotateX(-0deg);
+    }
+    
+}

@@ -1,0 +1,108 @@
+.contact-section{
+    background: var(--dark-shades);
+    padding: 40px 0;
+    padding-bottom: 200px;
+}
+.contact-section h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--light-shades);
+
+}
+.contact-section p{
+    color: var(--light-shades);
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 30px;
+}
+.border{
+    width: 100px;
+    height: 8px;
+    background: var(--main-brand);
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    border: solid 1px var(--main-brand);
+    border-top: none;
+    border-bottom: none;
+    padding: 0 40px;
+    
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:16px 0;
+    border: 0;
+    background: var(--dark-accent);
+    padding: 20px 40px;
+    outline: none;
+    color: var(--light-shades);
+    transition: 0.5s;
+    margin:3vh 0;
+}
+.contact-form-text:hover{
+   box-shadow: 0 0 10px 4px var(--main-brand) ; 
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background-color: var(--main-brand);
+    color: var(--light-shades);
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background-color: var(--light-shades);
+    color: var(--main-brand);
+}
+
+.border-animation {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes border-pulse {
+    0% {
+      border-color: var(--main-brand); 
+    }
+    50% {
+      border-color: var(--dark-accent); 
+    }
+    100% {
+      border-color: var(--light-shades);
+    }
+  }
+  
+  .contact-form {
+    animation: border-pulse 2s infinite;
+  }
+  .fontbianca{
+    color: var(--main-brand);
+  }
+  label{
+    color: var(--light-shades);
+  }
+  span{
+    font-size: 2.3rem;
+  }
+  
